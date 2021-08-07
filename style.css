@@ -5,7 +5,9 @@
   padding: 0px;
   font-family: "Poppins", sans-serif;
 }
-header {
+/*main page css*/
+
+.header-index {
   width: 100%;
   height: 90vh;
   background-image: url(./images/hero-bg-1024x683.jpg);
@@ -18,7 +20,7 @@ nav {
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.8);
   box-shadow: rgba(40, 240, 0, 0.5);
 }
 nav .logo {
@@ -63,19 +65,19 @@ nav .logo p {
   margin-left: 10px;
   cursor: pointer;
 }
-.banner {
+.banner-index {
   position: absolute;
   top: 50px;
   left: 30px;
   transform: translate(90px, 140px);
 }
-.banner p {
+.banner-index p {
   text-transform: capitalize;
   font-size: 18px;
   color: #020101;
   margin-bottom: 10px;
 }
-.banner h1 {
+.banner-index h1 {
   font-size: 50px;
   text-transform: capitalize;
   line-height: 70px;
@@ -277,7 +279,7 @@ button:hover {
   font-size: 12px;
 }
 .intersted {
-  height: 100vh;
+  height: 85vh;
   background-image: url(./images/CTA-bg-1024x683.jpg);
   background-position: bottom;
   background-size: cover;
@@ -286,9 +288,9 @@ button:hover {
 .intersted .text {
   text-align: center;
   position: absolute;
-  top: 0%;
-  left: 15%;
-  transform: translate(30%, 50%);
+  top: 3%;
+  left: 12%;
+  transform: translate(50%, 30%);
 }
 .intersted .text h1 {
   text-transform: capitalize;
@@ -323,11 +325,12 @@ button:hover {
   height: 30px;
   margin-right: 10px;
   border: 1px solid rgb(196, 196, 196);
+  padding: 3px 10px;
   border-radius: 20px;
   outline: coral;
 }
-.footer .col-3 input:placeholder- {
-  padding: 3px 5px;
+::placeholder {
+  padding: 3px 10px;
 }
 .footer .col-3 button {
   padding: 7px 15px;
@@ -391,4 +394,204 @@ hr {
 }
 .copyRight p {
   color: lightslategrey;
+}
+
+/*about us page css*/
+.header-about {
+  width: 100%;
+  height: 70vh;
+  background-image: url(./images/about-bg-1024x759.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 80px 80px;
+  position: relative;
+}
+.banner-about {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  transform: translate(90px, 140px);
+}
+
+.banner-about h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  line-height: 70px;
+  color: #020101;
+  margin-bottom: 20px;
+}
+.aim-p {
+  align-items: center;
+  padding: 50px;
+}
+.aim-p p {
+  font-size: 40px;
+  line-height: 70px;
+  color: #020101;
+  margin-bottom: 20px;
+}
+.mainText {
+  text-align: center;
+  padding: 50px 100px;
+}
+.mainText h1 {
+  color: rgb(0, 0, 0, 0.8);
+  text-align: 40px;
+  text-transform: capitalize;
+}
+.mainPhoto {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+.mainPhoto img {
+  border-radius: 25px;
+}
+/*contact us page css*/
+.header-contact {
+  width: 100%;
+  height: 70vh;
+  background-image: url(./images/admin-ajax.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 80px 80px;
+  position: relative;
+}
+.banner-contact {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  transform: translate(90px, 140px);
+}
+
+.banner-contact h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  line-height: 70px;
+  color: #020101;
+  margin-bottom: 20px;
+}
+.container {
+  width: 100%;
+  margin: 30px 100px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-col-left {
+  flex-basis: 40%;
+  margin: 0px 50px;
+}
+.contact-col-right {
+  flex-basis: 40%;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  align-items: center;
+}
+.row {
+  height: 70%;
+  width: 70%;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.layer button {
+  color: #fff;
+  font-size: 26px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 35%;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+.layer:hover {
+  background-color: rgba(204, 204, 204, 0.3);
+}
+.layer:hover button {
+  bottom: 50%;
+  opacity: 1;
+}
+.contact-col-right img {
+  width: 100%;
+  border-radius: 25px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.details h1 {
+  font-size: 24px;
+  padding: 20px 0px;
+  color: #020101;
+  text-transform: capitalize;
+}
+.detailsBox {
+  display: flex;
+  align-items: center;
+}
+.detailsIcon {
+  background-color: #75c32c24;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin: 10px 20px;
+  text-align: center;
+  align-items: center;
+}
+.detailsIcon .fas {
+  font-size: 18px;
+  color: #75c32c;
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+.detailsText h6 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #020101;
+}
+.detailsText p {
+  font-size: 12px;
+}
+hr {
+  color: #020101;
+  opacity: 0.7;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 600px;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  outline: #75c32c;
+  padding: 3px 20px;
+}
+textarea {
+  margin: 10px 0px;
+  border: 1px solid #eee;
+  width: 600px;
+  max-width: 600px;
+  max-height: 150px;
+  min-height: 40px;
+}
+.form button {
+  margin-top: 10px;
+  width: 150px;
+  padding: 7px 10px;
 }
